@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(
+    to bottom right,
+    $rootColor,
+    $accentColor,
+  );
+  margin: $space;
+  min-height: 1000px;
+
+  header {
+    color: $accentColor;
+    font-size: $fontSize;
+    margin-bottom: $space;
+  }
+
+  main {
+    background-color: $accentColor;
+    color: $rootColor;
+    display: inline-block;
+    font-size: $fontSize;
+    height: $space * 2;
+    line-height: $space * 2;
+    padding: 10px;
+    @include corners(3px);
+  }
+
+  footer {
+    color: $accentColor;
+    font-size: 28px;
+    margin-top: $space;
+  }
+
+}
